@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>GitHub Stats</title>
+  </head>
+  <body>
+    <h1>Git Stats</h1>
+    <div class="search">
+      <input type="text" id="username" placeholder="Enter your username" />
+      <button id="getStatsButton" onclick="getGitHubStats()">Get Stats</button>
+    </div>
+    <div class="container">
+      <div class="profile" id="left-profile"></div>
+      <div class="profile" id="right-profile"></div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+      // Fetch and display details for "aliaaquib" by default
+      window.onload = function () {
+        document.getElementById('username').value = 'aliaaquib';
+        getGitHubStats();
+      };
+    </script>
+  </body>
+</html>
